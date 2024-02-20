@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.tab-header--current-tab {}
+
+.md-text a {
+  text-decoration: underline;
+}
+.md-text h6 {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.md-text td {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+.md-text img {
+  display: inline;
+  margin: auto 0.5rem;
+}
+.md-text strong {
+  font-weight: bold;
+}
+.md-text ol {
+  list-style: auto;
+  padding-left: 40px;
+}
+
+.c-menu {
+  margin-bottom: -25px;
+}
+.c-menu a {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.c-text-input {
+  color: darkblue;
+  width: 100%;
+}
+.c-text-input__label-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+}
+.c-text-input__label {
+  font-size: 0.75rem;
+  font-family: inherit !important;
+  line-height: 20px;
+}
+.c-text-input--required &::after {
+  content: "*";
+  color: red;
+  margin-left: 0.3em;
+}
+.c-text-input__input {
+  font-size: inherit;
+  color: darkblue;
+  padding: 9px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 139, 0.2);
+  font-family: inherit !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+.c-text-input__input:not([disabled]):focus,
+.c-text-input__input:not([disabled]):active {
+  outline: none;
+  border-color: darkblue;
+}
+.c-text-input__input[disabled] {
+  background-color: rgba(0, 0, 139, 0.05);
+  color: rgba(0, 0, 139, 0.3);
+}
+.c-text-input--small {
+  font-size: 0.5rem;
+}
+.c-text-input >.c-text-input__input {
+    padding: 5px 15px;
+}
+.c-text-input__validation {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.4rem;
+  color: red;
+  font-family: inherit !important;
+}
+.c-text-input__under-label {
+  font-size: 0.5rem;
+  margin-top: 3px;
+  display: flex;
+  justify-content: flex-end;
+  color: blue;
+}
