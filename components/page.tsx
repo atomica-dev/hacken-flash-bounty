@@ -34,7 +34,7 @@ export function Page(props: {
 
       <div
         data-tina-field={tinaField(homeData.page, "footer")}
-        className="mb-2 mx-6 text-gray-600 text-base md-text"
+        className="py-2 px-6 text-gray-600 text-base md-text bg-[#3EF2D0] w-full"
       >
         <TinaMarkdown
           content={homeData.page?.footer}

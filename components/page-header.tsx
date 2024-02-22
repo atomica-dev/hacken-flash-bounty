@@ -10,7 +10,7 @@ export function PageHeader(props: { pageData: PageQuery | undefined; children?: 
     return <>{props.children}</>;
   }
 
-  return (<div className="py-2 z-10 w-full items-center justify-between text-sm flex border-b bg-black text-white">
+  return (<div className="py-2 z-10 w-full items-center justify-between text-sm flex border-b bg-[#3EF2D0] text-[#222223]">
     <div className="ml-6 flex items-center text-sm">
       {page.clientLogo?.url && <a
         href={page.clientLogo?.target || "#"}

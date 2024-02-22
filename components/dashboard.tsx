@@ -9,9 +9,9 @@ export function Dashboard(props: {
   const { dashboardItems, updatedAt } = props.item;
 
   return (<>
-    <div className="flex rounded-lg border border-gray-300 mt-8 mx-6 items-stretch flex-wrap justify-center justify-items-stretch">
+    <div className="flex rounded-lg border border-gray-300 mt-8 mx-6 items-stretch flex-wrap justify-center justify-items-stretch bg-[#3EF2D0]">
       {dashboardItems?.map((item, index) =>
-        <div key={item?.title} className={`flex flex-col grow shrink-0 items-center py px-4 -ml-px my-8 ${index > 0 ? "border-l border-gray-300" : ""}`}>
+        <div key={item?.title} className={`flex flex-col grow shrink-0 items-center py px-4 -ml-px my-8 ${index > 0 ? "border-l border-[#b0fff0]" : ""}`}>
           <div
             data-tina-field={tinaField(item!, "value")}
             className="text-xl font-semibold mb-2 text-center"
@@ -25,7 +25,7 @@ export function Dashboard(props: {
     </div>
     {updatedAt &&
       <div
-        className="flex w-full text-xs font-medium justify-start mx-6 my-4"
+        className="flex text-xs font-medium justify-start mx-6 my-4"
         data-tina-field={tinaField(props.item, "updatedAt")}
       >
         Last updated: {new Date(updatedAt).toLocaleString()}

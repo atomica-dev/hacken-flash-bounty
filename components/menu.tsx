@@ -12,7 +12,7 @@ export function Menu(props: { items: Array<PageMenuItems | FaqMenuItems | null> 
       {props.items.map((item, index) => item && <div
         key={index}
         data-tina-field={tinaField(item, "url")}
-        className={`c-menu--item font-medium flex flex-col justify-center items-center border basis-full border-black py-2 px-4 ${item.url === pathname ? "c-menu--item--active text-black bg-green-500" : "text-black bg-white"}`}
+        className={`c-menu--item font-medium flex flex-col justify-center items-center border basis-full border-black py-2 px-4 ${item.url === pathname ? "c-menu--item--active text-white bg-[#0D6CFC]" : "text-black bg-white"}`}
       >
         <a href={item?.url ?? "#"}>{item?.title}</a>
       </div>)}
